@@ -352,11 +352,9 @@ Now you have a running operator. The operator is just a program running in OpenS
 
 ## Step 6 Scaling and Modifying the Etcd Version
 
-1. Monitor the status of your pods. Open a new terminal session and login to OpenShift. *Remember*: change all userXX in the command to your userId. Arrange the display so that you can see both terminal sessions at the same time.
+1. Monitor the status of your pods. Arrange the display so that you can see both terminal sessions at the same time.
 
 	```
-	oc login https://api.ocp4faststart-aws.faststart.tk:6443/ --insecure-skip-tls-verify=true -u userXX -p <password>
-	oc project operator-userXX
 	oc get pods -l etcd_cluster=example-etcd-cluster -w
 	```
 
