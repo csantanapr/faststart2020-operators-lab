@@ -22,7 +22,7 @@ Open a command line terminal window, create a directory for example `/tmp/operat
 	mkdir /tmp/operatorlab
 	cd /tmp/operatorlab
 	oc login ...
-	oc new-project operator-userXX
+	oc new-project operator-lab
 	```
 
 2. Create the Custom Resource Definition (CRD) definition file the Etcd operator will be created to manage this Custom Resource:
