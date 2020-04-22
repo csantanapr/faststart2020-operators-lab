@@ -307,7 +307,7 @@ Now you have a running operator. The operator is just a program running in OpenS
 4. Watch the pods in the Etcd cluster get created - it will follow the status progression of the Etcd cluster pods:
 
 	```
-	oc get pods -l etcd_cluster=example-etcd-cluster -w
+	watch oc get pods -l etcd_cluster=example-etcd-cluster
 	```
 
 5. Verify the cluster has been exposed via a ClusterIP service:
@@ -355,7 +355,7 @@ Now you have a running operator. The operator is just a program running in OpenS
 1. Monitor the status of your pods. Arrange the display so that you can see both terminal sessions at the same time.
 
 	```
-	oc get pods -l etcd_cluster=example-etcd-cluster -w
+	watch oc get pods -l etcd_cluster=example-etcd-cluster
 	```
 
 2. Let's change the size of the Etcd example-etcd-cluster Custom Resource. Getting back to your original terminal session.
@@ -374,6 +374,12 @@ The Etcd Operator will detect the Custom Resource `spec.size` change and modif
 	```
 
 5. Watch the pods in the Etcd cluster being updated, each pod in turn becoming unavailable and returning back to a Running state.
+
+6. Get the status of the cluster
+
+	```
+	oc get etcdcluster example-etcd-cluster -o yaml
+	```
 
 ## Step 7: Disaster Recovery in Action
 
