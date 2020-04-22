@@ -1,5 +1,8 @@
 # Deploy an Etcd Operator to OpenShift
 
+You can get an OpenShift 4 Cluster for the lab here: https://learn.openshift.com/playgrounds/openshift42/
+
+
 The etcd operator manages etcd clusters deployed to Kubernetes and automates tasks related to establishing and operating an etcd cluster.
 
  - Create and Destroy
