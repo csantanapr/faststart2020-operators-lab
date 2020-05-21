@@ -1,5 +1,11 @@
 # Deploy an Etcd Operator to OpenShift
 
+## Presentation
+
+- [FastStart2020-Operators](./slides/FastStart2020-Operators-santana.pdf)
+
+## Lab
+
 You can get an OpenShift 4 Cluster for the lab here: https://learn.openshift.com/playgrounds/openshift42/
 
 
